@@ -1,20 +1,21 @@
-Request method:	POST
-Request URI:	https://dummy.restapiexample.com/api/v1/update/24
+Request method:	DELETE
+Request URI:	https://dummy.restapiexample.com/api/v1/delete/20
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Content-Type=text/plain; charset=ISO-8859-1
 Cookies:		<none>
 Multiparts:		<none>
-Body:
-{"name":"test","salary":"123","age":"23"}
-HTTP/1.1 405 Method Not Allowed
-Date: Tue, 13 Aug 2024 14:50:00 GMT
+Body:			<none>
+HTTP/1.1 429 Too Many Requests
+Date: Fri, 23 Aug 2024 17:55:58 GMT
 Server: Apache
-allow: GET, HEAD, PUT
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 55
+retry-after: 59
+x-ratelimit-reset: 1724435817
 Cache-Control: no-cache, private
 Upgrade: h2,h2c
 Connection: Upgrade
@@ -22,27 +23,59 @@ Vary: Accept-Encoding
 Content-Encoding: gzip
 X-Endurance-Cache-Level: 2
 X-nginx-cache: WordPress
-Content-Length: 522
+Content-Length: 595
 Content-Type: text/html; charset=UTF-8
 
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="robots" content="noindex,nofollow,noarchive"/>
-    <title>An Error Occurred: Method Not Allowed</title>
-    <style>body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }
-.container { margin: 30px; max-width: 600px; }
-h1 { color: #dc3545; font-size: 24px; }
-h2 { font-size: 18px; }</style>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Too Many Requests</title>
+    <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"/>
+    <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Oops! An Error Occurred</h1>
-      <h2>The server returned a "405 Method Not Allowed".</h2>
-      <p>
-        Something is broken. Please let us know what you were doing when this error occurred.
-        We will fix it as soon as possible. Sorry for any inconvenience caused.
-    </p>
+    <div class="flex-center position-ref full-height">
+      <div class="code">
+                429            </div>
+      <div class="message" style="padding: 10px;">
+                Too Many Requests            </div>
     </div>
   </body>
 </html>

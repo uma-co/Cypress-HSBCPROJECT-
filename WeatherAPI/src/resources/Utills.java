@@ -39,7 +39,7 @@ public class Utills {
 		return res = new ResponseSpecBuilder().expectStatusCode(200).build();
 	}
 	public static String updatejsonBody() {
-		return "{\"name\":\"test\",\"salary\":\"123\",\"age\":\"23\"}";
+		return "{\"name\":\"gumzz\",\"salary\":\"123\",\"age\":\"23\"}";
 	}
 	public static String updatejsonBodydup() {
 		return "{\"salary\":\"123\",\"name\":\"test\",\"age\":\"23\"}";
