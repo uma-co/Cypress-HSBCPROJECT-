@@ -1,0 +1,48 @@
+Request method:	POST
+Request URI:	https://dummy.restapiexample.com/api/v1/update/24
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"name":"test","salary":"123","age":"23"}
+HTTP/1.1 405 Method Not Allowed
+Date: Tue, 13 Aug 2024 14:50:00 GMT
+Server: Apache
+allow: GET, HEAD, PUT
+Cache-Control: no-cache, private
+Upgrade: h2,h2c
+Connection: Upgrade
+Vary: Accept-Encoding
+Content-Encoding: gzip
+X-Endurance-Cache-Level: 2
+X-nginx-cache: WordPress
+Content-Length: 522
+Content-Type: text/html; charset=UTF-8
+
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="robots" content="noindex,nofollow,noarchive"/>
+    <title>An Error Occurred: Method Not Allowed</title>
+    <style>body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }
+.container { margin: 30px; max-width: 600px; }
+h1 { color: #dc3545; font-size: 24px; }
+h2 { font-size: 18px; }</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Oops! An Error Occurred</h1>
+      <h2>The server returned a "405 Method Not Allowed".</h2>
+      <p>
+        Something is broken. Please let us know what you were doing when this error occurred.
+        We will fix it as soon as possible. Sorry for any inconvenience caused.
+    </p>
+    </div>
+  </body>
+</html>
